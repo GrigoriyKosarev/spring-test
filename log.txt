@@ -1,0 +1,6 @@
+Event{id=36, message='Some event for user John Smith', date=1 авг. 2020 г., 2:33:05}
+Event{id=7, message='Some event for user 2', date=1 авг. 2020 г., 2:33:05}
+Event{id=99, message='Some event for user John Smith', date=1 авг. 2020 г., 14:24:48}
+Event{id=90, message='Some event for user 3', date=1 авг. 2020 г., 14:24:48}
+Event{id=81, message='Some event for user John Smith', date=1 авг. 2020 г., 15:25:39}
+Event{id=25, message='Some event for user 3', date=1 авг. 2020 г., 15:25:39}
