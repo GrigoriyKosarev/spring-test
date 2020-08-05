@@ -3,18 +3,21 @@ package com.kosarev.goitspring.logger;
 import com.kosarev.goitspring.domain.Event;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.io.FileUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 
-@RequiredArgsConstructor
 @Component
 public class FileEventLogger implements EventLogger {
 
-    private final String fileName;
+    @Value("${fileName}")
+    private String fileName;
     private File file;
 
+    @PostConstruct
     private void init() throws IOException{
         this.file = new File(fileName);
         if (file.exists() && !file.canWrite()){

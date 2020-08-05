@@ -9,11 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
+import java.util.List;
 import java.util.Map;
 
 @Configuration
 @ComponentScan("com.kosarev.goitspring")
+@PropertySource("classpath:client.properties")
 public class CollectionConfig {
 
     @Autowired
@@ -30,5 +33,9 @@ public class CollectionConfig {
         return Map.of(EventType.INFO, consoleEventLogger, EventType.ERROR, combinedEventLogger);
     }
 
+    @Bean
+    public List<EventLogger> loggers() {
+        return List.of(consoleEventLogger, consoleEventLogger);
+    }
 
 }

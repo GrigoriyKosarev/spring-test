@@ -4,3 +4,7 @@ Event{id=99, message='Some event for user John Smith', date=1 авг. 2020 г., 
 Event{id=90, message='Some event for user 3', date=1 авг. 2020 г., 14:24:48}
 Event{id=81, message='Some event for user John Smith', date=1 авг. 2020 г., 15:25:39}
 Event{id=25, message='Some event for user 3', date=1 авг. 2020 г., 15:25:39}
+Event{id=89, message='Some event for user John Smith', date=5 авг. 2020 г., 13:36:56}
+Event{id=4, message='Some event for user 3', date=5 авг. 2020 г., 13:36:56}
+Event{id=46, message='Some event for user John Smith', date=5 авг. 2020 г., 13:37:12}
+Event{id=77, message='Some event for user 3', date=5 авг. 2020 г., 13:37:12}
